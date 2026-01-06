@@ -1,18 +1,18 @@
-\ Library Management System
+Library Management System
 
 
 
-\ Team Members:
+ Team Members:
 
-1\. \1. Hasnian Saleem-13
+1\.  Hasnian Saleem-13
 
-2\. \2. Shehryar Abbas-14
+2\.  Shehryar Abbas-14
 
-3\. \3. Zain Ul Abidin-30
+3\.  Zain Ul Abidin-30
 
 
 
-\ How to Run:
+ How to Run:
 
 1\. Download this project
 
@@ -24,7 +24,7 @@
 
 
 
-\ Features:
+ Features:
 
 \- Admin Login
 

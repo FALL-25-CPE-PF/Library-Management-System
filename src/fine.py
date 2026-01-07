@@ -1,15 +1,19 @@
 class FineSystem:
+    def calculate_fine(self, stype, days_issued, late_days, books):
+        rent_per_day = 10
 
-    def show_fine(self, stype):
-        days = int(input("Late days: "))
+        # Rent calculation
+        rent = books * days_issued * rent_per_day
 
+        # Late fine calculation
         if stype == "ug":
-            fine = days * 20
+            fine = late_days * 20
         elif stype == "pg":
-            fine = days * 10v
+            fine = late_days * 10
         elif stype == "research":
-            fine = days * 10
+            fine = late_days * 10
         else:
-            fine = days * 30
+            fine = late_days * 30
 
-        print("Fine =", fine)
+        total = rent + fine
+        return rent, fine, total

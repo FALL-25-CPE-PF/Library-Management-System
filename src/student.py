@@ -58,18 +58,22 @@ class Student:
             f.write(f"{user},{b}\n")
         print("Book requested")
 
-    def return_book(self, user):
-        b = input("Book ID: ")
+    def return_book(self):
+        days_issued = int(input("Kitne din ke liye book issue thi: "))
+        late_days = int(input("Late days: "))
+        books = int(input("Total books: "))
 
-        with open("data/issued.csv") as f:
-            lines = f.readlines()
+        fine_system = FineSystem()
+        rent, fine, total = fine_system.calculate_fine(
+            self.stype, days_issued, late_days, books
+        )
 
-        with open("data/issued.csv", "w") as f:
-            for line in lines:
-                if line.strip() != f"{user},{b}":
-                    f.write(line)
-        print("Book returned")
-
+        print("\n--- Bill Slip ---")
+        print("Student:", self.name)
+        print("Book Rent:", rent)
+        print("Late Fine:", fine)
+        print("Total Amount:", total)
+        
     def change_password(self, user):
         old = input("Old password: ")
         n1 = input("New password: ")

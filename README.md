@@ -16,7 +16,8 @@ Library Management System
 Features
 
 
-Admin
+1\.Admin:
+
 
 Login with default credentials (admin/admin123)
 
@@ -33,7 +34,8 @@ Approve Book Requests submitted by students before issuing
 Change Password with confirmation
 
 
-Student
+2\.Student:
+
 
 Login with student ID and password
 
@@ -42,7 +44,8 @@ View Available Books
 Request Book (requires admin approval before issuing)
 
 
-Return Book
+3\.Return Book:
+
 
 Automatically calculates fine if returned after 7 days
 
@@ -53,7 +56,8 @@ View Fine for all returned books
 Change Password securely
 
 
-File Handling
+4\.File Handling:
+
 
 All files are automatically created if missing:
 
@@ -62,7 +66,8 @@ admin.csv, students.csv, books.csv, requests.csv, issued_books.csv, fine.csv
 Admin and student passwords can be changed with validation
 
 
-How to Run
+5\.How to Run:
+
 
 Ensure Python 3 is installed.
 

@@ -1,8 +1,7 @@
-Library Management System
+# **Library Management System**
 
 
-
- Team Members:
+ ## **Team Members:**
 
 1\.  Hasnian Saleem-13
 
@@ -13,11 +12,11 @@ Library Management System
 
 
 
-Features
+## *Features*
 
-
-1\.Admin:
-
+<br>
+### **1\.Admin:**
+<br>
 
 Login with default credentials (admin/admin123)
 
@@ -33,9 +32,9 @@ Approve Book Requests submitted by students before issuing
 
 Change Password with confirmation
 
-
-2\.Student:
-
+<br>
+### **2\.Student:**
+<br>
 
 Login with student ID and password
 
@@ -43,9 +42,9 @@ View Available Books
 
 Request Book (requires admin approval before issuing)
 
-
-3\.Return Book:
-
+<br>
+### **3\.Return Book:**
+<br>
 
 Automatically calculates fine if returned after 7 days
 
@@ -55,9 +54,9 @@ View Fine for all returned books
 
 Change Password securely
 
-
-4\.File Handling:
-
+<br>
+### **4\.File Handling:**
+<br>
 
 All files are automatically created if missing:
 
@@ -65,9 +64,9 @@ admin.csv, students.csv, books.csv, requests.csv, issued_books.csv, fine.csv
 
 Admin and student passwords can be changed with validation
 
-
-5\.How to Run:
-
+<br>
+### **5\.How to Run:**
+<br>
 
 Ensure Python 3 is installed.
 

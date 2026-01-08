@@ -12,19 +12,8 @@ Library Management System
 
 
 
- How to Run:
 
-1\. Download this project
-
-2\. Open command prompt in project folder
-
-3\. Type: `python src/main.py`
-
-4\. Press Enter
-
-
-
- Features:
+Features:
 
 \- Admin Login
 

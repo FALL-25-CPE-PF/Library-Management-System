@@ -13,8 +13,8 @@
 
 
 ## *Features*
-
 <br>
+
 ### **1\.Admin:**
 <br>
 
@@ -31,8 +31,8 @@ View Books (all books with quantity)
 Approve Book Requests submitted by students before issuing
 
 Change Password with confirmation
-
 <br>
+
 ### **2\.Student:**
 <br>
 
@@ -41,8 +41,8 @@ Login with student ID and password
 View Available Books
 
 Request Book (requires admin approval before issuing)
-
 <br>
+
 ### **3\.Return Book:**
 <br>
 
@@ -53,8 +53,8 @@ Shows rent, fine, and total amount
 View Fine for all returned books
 
 Change Password securely
-
 <br>
+
 ### **4\.File Handling:**
 <br>
 
@@ -63,8 +63,8 @@ All files are automatically created if missing:
 admin.csv, students.csv, books.csv, requests.csv, issued_books.csv, fine.csv
 
 Admin and student passwords can be changed with validation
-
 <br>
+
 ### **5\.How to Run:**
 <br>
 

@@ -27,7 +27,3 @@ Features:
 
 
 
-\ Note:
-
-First run will create data files automatically.
-

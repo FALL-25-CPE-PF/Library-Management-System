@@ -1,24 +1,26 @@
-def create_file(filename, header):
-    try:
-        with open(filename, "r"):
-            pass
-    except:
-        with open(filename, "w") as f:
-            f.write(header + "\n")
+# setup.py
+import csv
+import os
 
-def setup():
-    # create all files in data folder
-    create_file("data/admin.csv", "username,password")
-    create_file("data/students.csv", "username,password,type")
-    create_file("data/books.csv", "id,name,author,quantity,rent")
-    create_file("data/issued.csv", "username,book_id")
-    create_file("data/requests.csv", "username,book_id")
+def setup_files():
+    files = {
+        "admin.csv": [["username", "password"], ["admin", "admin123"]],
+        "students.csv": [["sid", "name", "stype", "password"]],
+        "books.csv": [["bid", "title", "author", "quantity", "available"]],
+        "issued.csv": [["issue_id", "bid", "sid", "issue_date", "due_date", "return_date", "status"]],
+        "requests.csv": [["req_id", "bid", "sid", "status"]]
+    }
+    
+    for filename, data in files.items():
+        if not os.path.exists(filename):
+            with open(filename, "w", newline="") as f:
+                writer = csv.writer(f)
+                writer.writerows(data)
+            print(f"Created {filename}")
+        else:
+            print(f"{filename} already exists")
+    
+    print("\nSetup complete!")
 
-    # default admin
-    with open("data/admin.csv", "r") as f:
-        lines = f.readlines()
-
-    if len(lines) == 1:
-        with open("data/admin.csv", "a") as f:
-            f.write("admin,123\n")
-
+if __name__ == "__main__":
+    setup_files()
